@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" type="text/css"	href="css/lib.css">
+	<link rel="stylesheet" type="text/css"	href="css/common.css">
+	<link rel="stylesheet" type="text/css"	href="css/responsive-650-900.css">
+	<link rel="stylesheet" type="text/css"	href="css/responsive-320-650.css">
+	<!-- <link rel="stylesheet" type="text/css"	href="css/jquery-ui.css"> -->
+	<script type="text/javascript" src="js/jquery-3.4.1.js" defer></script>
+	<script type="text/javascript" src="js/jquery-ui.js" defer></script>
+	<script type="text/javascript" src="js/jq.js" defer></script>
+	<title>MoGo | Creative template</title>					
+</head>
+
+<body>
+	<style type="text/css">
+		.main{
+			width: 260px;
+			height: 120px;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		.nav-left,
+		.nav-right{
+			float: left;
+			width: 25px;
+			height: 120px;
+			background: grey;
+			z-index: 9999;
+		}
+		.wrapper{
+			position: relative;
+			float: left;
+			width: 120px;
+			height: 120px;
+			overflow: hidden;
+		}
+		.container{
+			position: relative;
+			left: 0;
+			right: 0;
+			width: 360px;
+			height: 120px;
+			z-index: 100;
+		}
+		.container .inner{
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+		.main.large{
+			width: 650px;
+		}
+		.main.large .wrapper{
+			width:600px;
+		}
+		.main.large .container{
+			width: 360px;
+			left: 120px;
+		}
+
+		.is-main .is-wrapper{
+			position: relative;
+			height: 380px;
+			overflow: hidden;
+		}
+		.is-main .is-wrapper .is-container{
+			position: relative;
+			left: 0;
+			overflow: hidden;
+			z-index: 100;
+		}
+		.is-main .is-wrapper .is-container .is-element{
+			float: left;
+		}
+	</style>
+	<div class="main ">
+		<div class="is-nav-left nav-left"></div>
+		<div class="is-wrapper wrapper">
+			<div class="is-container container">
+				<div class="is-element inner" style="background: #0000ff;"></div>
+				<div class="is-element inner" style="background: #00ff00;"></div>
+				<div class="is-element inner" style="background: #ff0000;"></div>
+			</div>
+		</div>
+		<div class="is-nav-right nav-right"></div>
+	</div>
+	<div class="page-wrap">
+		<div class="line-wrap quotes">
+			<div class="line is-main">
+				<div class="quote-nav bg-c-nr prev-quote is-nav-left" id="prev-quote"></div>
+
+				<div class="quotes-container is-wrapper">
+				<div class="quotes-container is-container">
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								“1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation.”
+							</div>
+							<div class="quote-author">Jon Doe</div>
+						</div>
+					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								“2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation.”
+							</div>
+							<div class="quote-author">Jon Doe</div>
+						</div>
+					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								“3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation.”
+							</div>
+							<div class="quote-author">Jon Doe</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+				<div class="quote-nav bg-c-nr next-quote is-nav-right" id="next-quote"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-wrap" style="display: none;">
+		<div class="line-wrap page-header bg-c-nr">
+			<div class="line">
+				<div class="menu-wrap">
+					<div class="logo-text">MoGo</div>
+					<div class="menu">
+						<a href="" class="active">About</a>
+						<a href="">Service</a>
+						<a href="">Blog</a>
+						<a href="">Contacts</a>
+						<a class="action-button" id="cart-button"></a>
+						<a class="action-button" id="search-button"></a>
+					</div>
+				</div>
+				<div class="line-header-big welcome">
+					<h2 class="kaushan">Creative Template</h1>
+					<h1 class="montserrat">Welcome<br>to MoGo</h1>
+				</div>
+				<div class="learn-more-wrap"><a href="" class="button center learn-more">Learn More</a></div>
+				<div class="sliders-wrap">
+					<div class="slider">
+						<div class="slider-progress"><div class="slider-ready"></div></div>
+						<div class="slider-label">
+							<strong class="slider-label-value">01</strong>
+							<span class="slider-label-title">Intro</span>
+						</div>
+					</div>
+					<div class="slider disabled">
+						<div class="slider-progress"><div class="slider-ready"></div></div>
+						<div class="slider-label">
+							<strong class="slider-label-value">02</strong>
+							<span class="slider-label-title">Work</span>
+						</div>
+					</div>
+					<div class="slider disabled">
+						<div class="slider-progress"><div class="slider-ready"></div></div>
+						<div class="slider-label">
+							<strong class="slider-label-value">03</strong>
+							<span class="slider-label-title">About</span>
+						</div>
+					</div>
+					<div class="slider disabled">
+						<div class="slider-progress"><div class="slider-ready"></div></div>
+						<div class="slider-label">
+							<strong class="slider-label-value">04</strong>
+							<span class="slider-label-title">Contacts</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap about">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">What we do</h3>
+					<h2 class="montserrat">STORY ABOUT US</h2>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat at purus in vestibulum. 
+					Morbi id massa ac magna vestibulum laoreet vel ac dolor.
+					Aliquam nunc orci, tincidunt eget magna sit amet, fringilla sollicitudin augue. 
+				</p>
+				<div class="about-gallery">
+					<div class="hover-block story">
+						<div class="hover-block-background"></div>
+						<div class="hover-container">
+							<div class="hover-layout">
+								<div class="hover-layout-background"></div>
+								<div class="hover-content story-title">
+									<div class="icon bg-c-nr"></div>
+									Super team
+								</div>
+							</div>
+							<img src="img/about-1.png">
+						</div>
+					</div>
+					<div class="hover-block story">
+						<div class="hover-block-background"></div>
+						<div class="hover-container">
+							<div class="hover-layout">
+								<div class="hover-layout-background"></div>
+								<div class="hover-content story-title">
+									<div class="icon bg-c-nr"></div>
+									Super team
+								</div>
+							</div>
+							<img src="img/about-2.png">
+						</div>
+					</div>
+					<div class="hover-block story">
+						<div class="hover-block-background"></div>
+						<div class="hover-container">
+							<div class="hover-layout">
+								<div class="hover-layout-background"></div>
+								<div class="hover-content story-title">
+									<div class="icon bg-c-nr"></div>
+									Super team
+								</div>
+							</div>
+							<img src="img/about-3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap stat">
+			<div class="line">
+				<div class="counter">
+					<div class="counter-content">
+						<strong class="counter-value">42</strong>
+						<span class="counter-title">Web Design Projects</span>
+					</div>
+				</div>
+				<div class="counter">
+					<div class="counter-content">
+						<strong class="counter-value">123</strong>
+						<span class="counter-title">Happy Clients</span>
+					</div>
+				</div>
+				<div class="counter">
+					<div class="counter-content">
+						<strong class="counter-value">15</strong>
+						<span class="counter-title">Awards Winner</span>
+					</div>
+				</div>
+				<div class="counter">
+					<div class="counter-content">
+						<strong class="counter-value">99</strong>
+						<span class="counter-title">Cup Of Coffee</span>
+					</div>
+				</div>
+				<div class="counter">
+					<div class="counter-content">
+						<strong class="counter-value">24</strong>
+						<span class="counter-title">Members</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap">
+			<div class="line">
+				<div class="line-header about">
+					<h3 class="kaushan">We work with</h3>
+					<h2 class="montserrat">Amazing services</h2>
+				</div>
+				<div class="features">
+					<div class="feature photography">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">Photography</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						</div>
+					</div>
+					<div class="feature seo">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">SEO</div>
+							<div class="description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+						</div>
+					</div>
+					<div class="feature web-design">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">Web design</div>
+							<div class="description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						</div>
+					</div>
+					<div class="feature css-html">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">CSS/HTML</div>
+							<div class="description">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</div>
+						</div>
+					</div>
+					<div class="feature creativity">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">Creativity</div>
+							<div class="description">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						</div>
+					</div>
+					<div class="feature digital">
+						<div class="icon"></div>
+						<div class="text-wrap">
+							<div class="title">Digital</div>
+							<div class="description">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap unique-design">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">For all devices</h3>
+					<h2 class="montserrat">Unique design</h2>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap what-we-do">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">Service</h3>
+					<h2 class="montserrat">What we do</h2>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+				<div class="what-we-do-wrap">
+					<div class="what-we-do-img bg-c-nr"><img src="img/what-we-do.png"></div>
+					<div class="services-wrap">
+							<div class="service-header photography opened">
+								<div class="icon bg-c-nr"></div>
+								<div class="title">Photography</div>
+								<div class="open-button bg-c-nr"></div>
+							</div>
+							<div class="service-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="service-header creativity closed">
+								<div class="icon bg-c-nr"></div>
+								<div class="title">Creativity</div>
+								<div class="open-button bg-c-nr"></div>
+							</div>
+							<div class="service-body closed">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="service-header web-design closed">
+								<div class="icon bg-c-nr"></div>
+								<div class="title">Web-design</div>
+								<div class="open-button bg-c-nr"></div>
+							</div>
+							<div class="service-body closed">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap quotes">
+			<div class="line">
+				<div class="quote-nav bg-c-nr prev-quote" id="prev-quote"></div>
+				<div class="quote">
+					<div class="quote-img">
+						<img src="img/icon-speech.png">
+					</div>
+					<div class="quote-wrap">
+						<div class="quote-text">
+							“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation.”
+						</div>
+						<div class="quote-author">Jon Doe</div>
+					</div>
+				</div>
+				<div class="quote-nav bg-c-nr next-quote" id="next-quote"></div>
+			</div>
+		</div>
+		<div class="line-wrap team">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">Who we are</h3>
+					<h2 class="montserrat">Meet our team</h2>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+				<div class="team-gallery">
+					<div class="member">
+						<div class="hover-block member-img">
+							<div class="hover-block-background"></div>
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content member-social">
+										<a href="" class="member-facebook"></a>
+										<a href="" class="member-twitter"></a>
+										<a href="" class="member-pinterest"></a>
+										<a href="" class="member-instagram"></a>
+									</div>
+								</div>
+								<img src="img/team-1.png">
+							</div>
+						</div>
+						<div class="member-info">
+							<div class="member-name">Mattew Dix</div>
+							<div class="member-post">Graphic design</div>
+						</div>
+					</div>
+					<div class="member">
+						<div class="hover-block member-img">
+							<div class="hover-block-background"></div>
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content member-social">
+										<a href="" class="member-facebook"></a>
+										<a href="" class="member-twitter"></a>
+										<a href="" class="member-pinterest"></a>
+										<a href="" class="member-instagram"></a>
+									</div>
+								</div>
+								<img src="img/team-2.png">
+							</div>
+						</div>
+						<div class="member-info">
+							<div class="member-name">Cristofer Campbell</div>
+							<div class="member-post">Branding/UX design</div>
+						</div>
+					</div>
+					<div class="member">
+						<div class="hover-block member-img">
+							<div class="hover-block-background"></div>
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content member-social">
+										<a href="" class="member-facebook"></a>
+										<a href="" class="member-twitter"></a>
+										<a href="" class="member-pinterest"></a>
+										<a href="" class="member-instagram"></a>
+									</div>
+								</div>
+								<img src="img/team-3.png">
+							</div>
+						</div>
+						<div class="member-info">
+							<div class="member-name">Michael Fertig</div>
+							<div class="member-post">Developer</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap partners">
+			<div class="line">
+				<div class="partner-logo"><img src="img/partner-1.png"></div>
+				<div class="partner-logo"><img src="img/partner-2.png"></div>
+				<div class="partner-logo"><img src="img/partner-3.png"></div>
+				<div class="partner-logo"><img src="img/partner-4.png"></div>
+				<div class="partner-logo"><img src="img/partner-5.png"></div>
+			</div>
+		</div>
+		<div class="line-wrap">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">What we do</h3>
+					<h2 class="montserrat">Some of our works</h2>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</p>
+			</div>
+		</div>
+		<div class="line-wrap portfolio">
+			<table class="projects-wrap">
+				<tr>
+					<td>
+						<img src="img/project-1.png">
+					</td>
+					<td>
+						<img src="img/project-2.png">
+					</td>
+					<td rowspan="2">
+						<img src="img/project-3.png">
+					</td>
+					<td>
+						<img src="img/project-4.png">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/project-5.png">
+					</td>
+					<td>
+						<img src="img/project-6.png">
+					</td>
+					<td>
+						<img src="img/project-7.png">
+					</td>
+				</tr>
+			</table>
+			<!-- <table class="projects-wrap">
+				<tr>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-1.png">
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-2.png">
+							</div>
+						</div>
+					</td>
+					<td rowspan="2">
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr long">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-3.png">
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-4.png">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-5.png">
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+									<div class="hover-layout-background"></div>
+									<div class="hover-content bg-c-nr">
+										<div class="icon"></div>
+										<div class="text">
+											<strong>Creatively designed</strong>
+											Lorem ipsum dolor sit
+										</div>
+									</div>
+								</div>
+								<img src="img/project-6.png">
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="hover-block project">
+							<div class="hover-container">
+								<div class="hover-layout">
+								<div class="hover-layout-background"></div>
+								<div class="hover-content bg-c-nr">
+									<div class="icon"></div>
+									<div class="text">
+										<strong>Creatively designed</strong>
+										Lorem ipsum dolor sit
+									</div>
+								</div>
+								</div>
+								<img src="img/project-7.png">
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table> -->
+		</div>
+		<div class="line-wrap quotes">
+			<div class="line">
+				<div class="quote-nav bg-c-nr prev-quote" id="prev-quote"></div>
+				<div class="quote">
+					<div class="quote-img">
+						<img src="img/quote-avatar.png">
+					</div>
+					<div class="quote-wrap">
+						<div class="quote-text">
+							“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation.”
+						</div>
+						<div class="quote-author">Joshua Earle</div>
+					</div>
+				</div>
+				<div class="quote-nav bg-c-nr next-quote" id="next-quote"></div>
+			</div>
+		</div>
+		<div class="line-wrap feedbacks bg-c-nr">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">Happy clients</h3>
+					<h2 class="montserrat">What people say</h2>
+				</div>
+				<div class="feedbacks-wrap">
+					<div class="feedbacks-group">
+						<div class="feedback">
+							<div class="photo-wrap">
+								<img src="img/client-1.png">
+							</div>
+							<div class="text-wrap">
+								<div class="author">
+									<div class="name">Mattew Dix</div>
+									<div class="post">Graphic design</div>
+								</div>
+								<div class="separator"></div>
+								<div class="text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+								</div>
+							</div>
+						</div>
+						<div class="feedback">
+							<div class="photo-wrap">
+								<img src="img/client-2.png">
+							</div>
+							<div class="text-wrap">
+								<div class="author">
+									<div class="name">Nick Karvounis</div>
+									<div class="post">Graphic design</div>
+								</div>
+								<div class="separator"></div>
+								<div class="text">
+									Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="feedbacks-group">
+						<div class="feedback">
+							<div class="photo-wrap">
+								<img src="img/client-3.png">
+							</div>
+							<div class="text-wrap">
+								<div class="author">
+									<div class="name">Jaelynn Castillo</div>
+									<div class="post">Graphic design</div>
+								</div>
+								<div class="separator"></div>
+								<div class="text">
+									Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								</div>
+							</div>
+						</div>
+						<div class="feedback">
+							<div class="photo-wrap">
+								<img src="img/client-4.png">
+							</div>
+							<div class="text-wrap">
+								<div class="author">
+									<div class="name">Mike Petrucci</div>
+									<div class="post">Graphic design</div>
+								</div>
+								<div class="separator"></div>
+								<div class="text">
+									Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap">
+			<div class="line">
+				<div class="line-header">
+					<h3 class="kaushan">Our stories</h2>
+					<h2 class="montserrat">Latest blog</h2>
+				</div>
+				<div class="blogs-wrap">
+				<div class="blog">
+					<div class="preview">
+						<img src="img/blog-1.png">
+						<div class="blog-date">
+							<strong class="blog-date-day">15</strong>
+							<span class="blog-date-month">Jan</span>
+						</div>
+					</div>
+					<div class="title">Lorem ipsum dolor sit amet</div>
+					<div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="footer">
+						<div class="info views">524</div>
+						<div class="info comments">17</div>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="preview">
+						<img src="img/blog-2.png">
+						<div class="blog-date">
+							<strong class="blog-date-day">14</strong>
+							<span class="blog-date-month">Jan</span>
+						</div>
+					</div>
+					<div class="title">Sed do eiusmod tempor</div>
+					<div class="text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="footer">
+						<div class="info views">992</div>
+						<div class="info comments">42</div>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="preview">
+						<img src="img/blog-3.png">
+						<div class="blog-date">
+							<strong class="blog-date-day">12</strong>
+							<span class="blog-date-month">Jan</span>
+						</div>
+					</div>
+					<div class="title">Lorem ipsum dolor sit amet</div>
+					<div class="text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+					<div class="footer">
+						<div class="info views">1560</div>
+						<div class="info comments">98</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- 
+			Info 		Blogs 		Instagram
+			480			390			270
+			40			32.5		22.5
+			42.105263	34.210536	23.684210
+		 -->
+		<div class="line-wrap bg-c-nr map">
+			<div class="line">
+				<div class="line-header">
+					<h2 class="montserrat">Open map</h2>
+				</div>
+			</div>
+		</div>
+		<div class="line-wrap footer">
+			<div class="line">
+				<div class="footer-content-wrap">
+					<div class="block info">
+						<div class="logo">MoGo</div>
+						<div class="text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+						<div class="followers">
+							<strong>15k</strong> followers
+						</div>
+						<div class="separator"></div>
+						<div class="follow-us">
+							<span class="prompt">Follow us:</span>
+							<div class="links">
+								<a href="" class="bg-c-nr facebook"></a>
+								<a href="" class="bg-c-nr twitter"></a>
+								<a href="" class="bg-c-nr instagram"></a>
+								<a href="" class="bg-c-nr pinterest"></a>
+								<a href="" class="bg-c-nr google-plus"></a>
+								<a href="" class="bg-c-nr youtube"></a>
+								<a href="" class="bg-c-nr dribbble"></a>
+								<a href="" class="bg-c-nr tumblr"></a>
+							</div>
+						</div>
+						<form class="subscribe-form">
+							<input type="text" placeholder="Your Email...">
+							<input type="submit" value="subscribe">
+						</form>
+					</div>
+					<div class="block blogs">
+						<div class="title">Blogs</div>
+						<div class="blog">
+							<div class="img">
+								<img src="img/footer-blog-1.png">
+							</div>
+							<div class="title-wrap">
+								<div class="title">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+								<div class="date">Jan 9, 2016</div>
+							</div>
+						</div>
+						<div class="blog">
+							<div class="img">
+								<img src="img/footer-blog-2.png">
+							</div>
+							<div class="title-wrap">
+								<div class="title">Consectetur adipiscing elit, sed do eiusmod tempor</div>
+								<div class="date">Jan 9, 2016</div>
+							</div>
+						</div>
+						<div class="blog">
+							<div class="img">
+								<img src="img/footer-blog-3.png">
+							</div>
+							<div class="title-wrap">
+								<div class="title">sed do eiusmod tempor incididunt ut labore</div>
+								<div class="date">Jan 9, 2016</div>
+							</div>
+						</div>
+					</div>
+					<div class="block instagram">
+						<div class="title">Instagram</div>
+						<div class="gallery">
+							<div class="img-container"><img src="img/footer-instagram-1.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-2.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-3.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-4.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-5.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-6.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-7.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-8.png"></div>
+							<div class="img-container"><img src="img/footer-instagram-9.png"></div>
+						</div>
+						<a href="" class="more-photos">View more photos</a>
+					</div>
+				</div>
+				<div class="copyright">© 2019 MoGo free PSD template by <span class="site-author">[insert your name]</span></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

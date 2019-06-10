@@ -1,0 +1,167 @@
+/*
+
+Red 			rgb(243, 129, 129)	#f38181
+Yellow Bright 	rgb(252, 227, 138)	#fce38a
+Yellow			rgb(234, 255, 208)	#eaffd0
+Green 			rgb(149, 225, 211)	#95e1d3
+
+*/
+
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-button{
+	display: none;
+}
+::-webkit-scrollbar-track{
+	width: 5px;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 3px;
+	background-color: #95e1d3;
+}
+
+
+.bg-c-nr{
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+.page-wrap{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.line-wrap{
+	width: 100%;
+	height: auto;
+	overflow-y: auto;
+}
+.line{
+	width: calc(100% - 20px);
+	max-width: 1180px;
+	height: auto;
+	overflow-y: auto;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+
+.line-header,
+.line-header-big{
+	width: 100%;
+	height: auto;
+	margin: 5% 0;
+	text-align: center;
+}
+.line-header-big{
+	color: #ffffff;
+}
+.line-header:after,
+.line-header-big:after{
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 3% auto 0;
+	background-color: #f38181;
+	content: '';
+}
+.line-header-big:after{
+	margin: 5% auto 0;
+	background-color: #ffffff;
+}
+.line-header .kaushan,
+.line-header-big .kaushan{
+	display: block;
+	padding: 1.5% 0;
+
+	color: inherit;
+	font-size: 24px;
+	font-family: 'Kaushan Script';
+	font-weight: normal;
+	line-height: 1.0;
+}
+.line-header .montserrat,
+.line-header-big .montserrat{
+	display: block;
+	color: inherit;
+	font-size: 30px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 1.0;
+	text-transform: uppercase;
+}
+.line-header-big .kaushan{
+	padding: 2.5% 0;
+	font-size: 70px;
+}
+.line-header-big .montserrat{
+	font-size: 150px;
+	line-height: 0.9;
+}
+
+
+
+.hover-block{
+	transition: 0.2s;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.hover-block .hover-block-background{
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	width: 100%;
+	height: 100%;
+	background-color: #95e1d3;
+}
+.hover-block .hover-container{
+	transition: 0.3s;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: calc(100% - 10px);
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.hover-block .hover-container:hover{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.hover-block .hover-container img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.hover-block .hover-layout{
+	transition: inherit;
+	position: absolute;
+	z-index: 10000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.0;
+}
+.hover-block .hover-container:hover .hover-layout{
+	opacity: 1.0;
+}
+.hover-block .hover-layout .hover-layout-background{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgb(243, 129, 129), rgb(252, 227, 138));
+	opacity: 0.8;
+}
