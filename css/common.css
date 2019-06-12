@@ -20,6 +20,8 @@ Grey			rgb()				#999999
 
 */
 
+.cbalink{ display: none; }
+
 *{
 	position: relative;
 	margin: 0;
