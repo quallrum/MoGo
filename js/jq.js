@@ -155,7 +155,7 @@ dialog.error = $('#subscribe-error').dialog({
 });
 dialog.killing = $('#killing-myself').dialog({
 	draggable: false,
-	autoOpen: true,
+	autoOpen: false,
 	closeOnEscape: false,
 	modal: true,
 	show: {effect: 'fade', duration: 500},
