@@ -268,22 +268,23 @@ a.button:hover{
 .story:first-child{
 	margin-left: 0;
 }
-.story-title{
-	width: 100%;
-	height: 53px;
-	margin: 30% auto 0;
-
+.story .hover-layout{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.story .story-icon{
+	width: 32px;
+	height: 23px;
+	margin: 0 auto 10px;
+	background-image: url('../img/icon-users.png');
+}
+.story .story-title{
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-}
-.story-title .icon{
-	width: 32px;
-	height: 23px;
-	margin: 0 auto 10px;
-	background-image: url('../img/icon-users.png');
 }
 
 
@@ -536,6 +537,7 @@ a.button:hover{
 	width: calc(100% - 120px);
 	height: auto;
 	margin: 60px;
+	/*margin: 5%;*/
 }
 .quote .quote-img{
 	float: left;
@@ -557,6 +559,16 @@ a.button:hover{
 	color: #999999;
 	font-size: 20px;
 	font-style: italic;
+}
+.quote .quote-text:before{
+	content: '“';
+	display: inline;
+	margin-right: -0.25rem;
+}
+.quote .quote-text:after{
+	content: '”';
+	display: inline;
+	margin-left: -0.25rem;
 }
 .quote .quote-author{
 	width: 100%;
@@ -594,17 +606,18 @@ a.button:hover{
 	margin-left: 0;
 }
 .member .hover-block .hover-layout{
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .member .hover-block .hover-content{
-	width: 100%;
+	/*width: 50%;*/
 	height: 56px;
-	margin: 50% auto 0;
 }
 .member .hover-content.member-social a{
 	float: left;
 	display: block;
-	width: 25%;
+	width: 56px;
 	height: 56px;
 }
 .member .member-social a{
@@ -613,25 +626,25 @@ a.button:hover{
 .member .member-social .member-facebook{
 	background-position: 0 0;
 }
-.member .member-social .member-facebook: hover{
+.member .member-social .member-facebook:hover{
 	background-position: 0 -56px;
 }
 .member .member-social .member-twitter{
 	background-position: -56px 0;
 }
-.member .member-social .member-twitter: hover{
+.member .member-social .member-twitter:hover{
 	background-position: -56px -56px;
 }
 .member .member-social .member-pinterest{
 	background-position: -112px 0;
 }
-.member .member-social .member-pinterest: hover{
+.member .member-social .member-pinterest:hover{
 	background-position: -112px -56px;
 }
 .member .member-social .member-instagram{
 	background-position: -168px 0;
 }
-.member .member-social .member-instagram: hover{
+.member .member-social .member-instagram:hover{
 	background-position: -168px -56px;
 }
 .member .member-info{
@@ -674,32 +687,18 @@ a.button:hover{
 	margin: 0 auto;
 }
 
-.projects-wrap{
-	display: block;
-	width: 100%;
-	height: auto;
-	border: none;
-	border-collapse: collapse;
-	border-spacing: 0px;
+
+
+.projects-grid{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
-.projects-wrap td{
-	/*width: 25%;*/
-	height: auto;
-}
-/*.projects-wrap tr{
-	width: 100%;
-	height: auto;
-	overflow-y: auto;
-	border: none;
-	border-collapse: collapse;
-	border-spacing: 0px;
-}
-.projects-wrap td{
-	width: 25%;
-	height: auto;
-	border: none;
-	border-collapse: collapse;
-	border-spacing: 0px;
+.projects-grid div:nth-child(3){
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end:  4;
 }
 .project{
 	width: 100%;
@@ -707,19 +706,14 @@ a.button:hover{
 .project.hover-block{
 	margin: 0px;
 }
+.project .hover-layout{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .project .hover-container{
 	width: 100%;
 	margin: 0px;
-}
-.project .hover-container: hover{
-	margin: 0px;
-}
-.project .hover-content{
-	margin: 0px;
-	margin-top: 27%;
-}
-.project .hover-content.long{
-	margin-top: 70%;
 }
 .project .hover-content .icon{
 	width: 30px;
@@ -744,7 +738,17 @@ a.button:hover{
 	font-weight: bold;
 	font-style: normal;
 	text-transform: uppercase;
-}*/
+}
+.project .hover-content .text span{
+	display: block;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+
+	color: #ffffff;
+	font-style: italic;
+	text-align: center;
+}
 
 
 
@@ -1095,6 +1099,7 @@ a.button:hover{
 	color: #e5e5e5;
 }
 .subscribe-form input[type="submit"]{
+	cursor: pointer;
 	display: block;
 	float: left;
 	width: 35%;

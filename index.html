@@ -18,134 +18,8 @@
 </head>
 
 <body>
-	<style type="text/css">
-		.main{
-			width: 260px;
-			height: 120px;
-			margin: 100px auto;
-			overflow: hidden;
-		}
-		.nav-left,
-		.nav-right{
-			float: left;
-			width: 25px;
-			height: 120px;
-			background: grey;
-			z-index: 9999;
-		}
-		.wrapper{
-			position: relative;
-			float: left;
-			width: 120px;
-			height: 120px;
-			overflow: hidden;
-		}
-		.container{
-			position: relative;
-			left: 0;
-			right: 0;
-			width: 360px;
-			height: 120px;
-			z-index: 100;
-		}
-		.container .inner{
-			float: left;
-			width: 100px;
-			height: 100px;
-			margin: 10px;
-		}
-		.main.large{
-			width: 650px;
-		}
-		.main.large .wrapper{
-			width:600px;
-		}
-		.main.large .container{
-			width: 360px;
-			left: 120px;
-		}
-
-		.is-main .is-wrapper{
-			position: relative;
-			height: 380px;
-			overflow: hidden;
-		}
-		.is-main .is-wrapper .is-container{
-			position: relative;
-			left: 0;
-			overflow: hidden;
-			z-index: 100;
-		}
-		.is-main .is-wrapper .is-container .is-element{
-			float: left;
-		}
-	</style>
-	<div class="main ">
-		<div class="is-nav-left nav-left"></div>
-		<div class="is-wrapper wrapper">
-			<div class="is-container container">
-				<div class="is-element inner" style="background: #0000ff;"></div>
-				<div class="is-element inner" style="background: #00ff00;"></div>
-				<div class="is-element inner" style="background: #ff0000;"></div>
-			</div>
-		</div>
-		<div class="is-nav-right nav-right"></div>
-	</div>
-	<div class="page-wrap">
-		<div class="line-wrap quotes">
-			<div class="line is-main">
-				<div class="quote-nav bg-c-nr prev-quote is-nav-left" id="prev-quote"></div>
-
-				<div class="quotes-container is-wrapper">
-				<div class="quotes-container is-container">
-
-					<div class="quote is-element">
-						<div class="quote-img">
-							<img src="img/icon-speech.png">
-						</div>
-						<div class="quote-wrap">
-							<div class="quote-text">
-								“1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation.”
-							</div>
-							<div class="quote-author">Jon Doe</div>
-						</div>
-					</div>
-
-					<div class="quote is-element">
-						<div class="quote-img">
-							<img src="img/icon-speech.png">
-						</div>
-						<div class="quote-wrap">
-							<div class="quote-text">
-								“2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation.”
-							</div>
-							<div class="quote-author">Jon Doe</div>
-						</div>
-					</div>
-
-					<div class="quote is-element">
-						<div class="quote-img">
-							<img src="img/icon-speech.png">
-						</div>
-						<div class="quote-wrap">
-							<div class="quote-text">
-								“3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation.”
-							</div>
-							<div class="quote-author">Jon Doe</div>
-						</div>
-					</div>
-					
-				</div>
-				</div>
-				<div class="quote-nav bg-c-nr next-quote is-nav-right" id="next-quote"></div>
-			</div>
-		</div>
-	</div>
-	<div class="page-wrap" style="display: none;">
-		<div class="line-wrap page-header bg-c-nr">
+	<div class="page-wrap" >
+		<div class="line-wrap page-header bg-c-nr" style="display: none;">
 			<div class="line">
 				<div class="menu-wrap">
 					<div class="logo-text">MoGo</div>
@@ -195,7 +69,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap about">
+		<div class="line-wrap about" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">What we do</h3>
@@ -212,9 +86,9 @@
 						<div class="hover-container">
 							<div class="hover-layout">
 								<div class="hover-layout-background"></div>
-								<div class="hover-content story-title">
-									<div class="icon bg-c-nr"></div>
-									Super team
+								<div class="hover-content">
+									<div class="story-icon bg-c-nr"></div>
+									<div class="story-title">Super team</div>
 								</div>
 							</div>
 							<img src="img/about-1.png">
@@ -225,9 +99,9 @@
 						<div class="hover-container">
 							<div class="hover-layout">
 								<div class="hover-layout-background"></div>
-								<div class="hover-content story-title">
-									<div class="icon bg-c-nr"></div>
-									Super team
+								<div class="hover-content">
+									<div class="story-icon bg-c-nr"></div>
+									<div class="story-title">Super team</div>
 								</div>
 							</div>
 							<img src="img/about-2.png">
@@ -238,9 +112,9 @@
 						<div class="hover-container">
 							<div class="hover-layout">
 								<div class="hover-layout-background"></div>
-								<div class="hover-content story-title">
-									<div class="icon bg-c-nr"></div>
-									Super team
+								<div class="hover-content">
+									<div class="story-icon bg-c-nr"></div>
+									<div class="story-title">Super team</div>
 								</div>
 							</div>
 							<img src="img/about-3.png">
@@ -249,7 +123,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap stat">
+		<div class="line-wrap stat" style="display: none;">
 			<div class="line">
 				<div class="counter">
 					<div class="counter-content">
@@ -283,7 +157,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap">
+		<div class="line-wrap" style="display: none;">
 			<div class="line">
 				<div class="line-header about">
 					<h3 class="kaushan">We work with</h3>
@@ -335,7 +209,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap unique-design">
+		<div class="line-wrap unique-design" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">For all devices</h3>
@@ -343,7 +217,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap what-we-do">
+		<div class="line-wrap what-we-do" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">Service</h3>
@@ -397,25 +271,58 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap quotes">
-			<div class="line">
-				<div class="quote-nav bg-c-nr prev-quote" id="prev-quote"></div>
-				<div class="quote">
-					<div class="quote-img">
-						<img src="img/icon-speech.png">
-					</div>
-					<div class="quote-wrap">
-						<div class="quote-text">
-							“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, quis nostrud exercitation.”
+		<div class="line-wrap quotes" style="display: none;">
+			<div class="line is-main" id="quotes">
+				<div class="quote-nav bg-c-nr prev-quote is-nav-left" id="prev-quote"></div>
+
+				<div class="quotes-container is-wrapper">
+				<div class="is-container">
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
 						</div>
-						<div class="quote-author">Jon Doe</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis turpis ligula, consequat et massa ut, scelerisque volutpat augue. 
+								Duis interdum feugiat purus, ac euismod nunc pellentesque nec.
+							</div>
+							<div class="quote-author">Johnnie Baird</div>
+						</div>
 					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Ut vitae commodo metus. Nulla tempus velit a euismod imperdiet. Maecenas vel vehicula lectus. Cras eget elementum quam. 
+								Nunc placerat lectus eget dui posuere molestie.
+							</div>
+							<div class="quote-author">Howard Gregory</div>
+						</div>
+					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/icon-speech.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Vivamus id aliquet arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed posuere nibh, quis feugiat erat. 
+								Quisque placerat tristique ultricies. Vestibulum quis lorem dui.
+							</div>
+							<div class="quote-author">Stanley Duran</div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="quote-nav bg-c-nr next-quote" id="next-quote"></div>
+				</div>
+				<div class="quote-nav bg-c-nr next-quote is-nav-right" id="next-quote"></div>
 			</div>
 		</div>
-		<div class="line-wrap team">
+		<div class="line-wrap team" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">Who we are</h3>
@@ -492,7 +399,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap partners">
+		<div class="line-wrap partners" style="display: none;">
 			<div class="line">
 				<div class="partner-logo"><img src="img/partner-1.png"></div>
 				<div class="partner-logo"><img src="img/partner-2.png"></div>
@@ -501,7 +408,7 @@
 				<div class="partner-logo"><img src="img/partner-5.png"></div>
 			</div>
 		</div>
-		<div class="line-wrap">
+		<div class="line-wrap" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">What we do</h3>
@@ -513,179 +420,167 @@
 				</p>
 			</div>
 		</div>
-		<div class="line-wrap portfolio">
-			<table class="projects-wrap">
-				<tr>
-					<td>
+		<div class="line-wrap portfolio" style="display: none;">
+			<div class="projects-grid">
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									<span>Lorem ipsum dolor sit</span>
+								</div>
+							</div>
+						</div>
 						<img src="img/project-1.png">
-					</td>
-					<td>
-						<img src="img/project-2.png">
-					</td>
-					<td rowspan="2">
-						<img src="img/project-3.png">
-					</td>
-					<td>
-						<img src="img/project-4.png">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="img/project-5.png">
-					</td>
-					<td>
-						<img src="img/project-6.png">
-					</td>
-					<td>
-						<img src="img/project-7.png">
-					</td>
-				</tr>
-			</table>
-			<!-- <table class="projects-wrap">
-				<tr>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-1.png">
-							</div>
-						</div>
-					</td>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-2.png">
-							</div>
-						</div>
-					</td>
-					<td rowspan="2">
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr long">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-3.png">
-							</div>
-						</div>
-					</td>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-4.png">
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-5.png">
-							</div>
-						</div>
-					</td>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-									<div class="hover-layout-background"></div>
-									<div class="hover-content bg-c-nr">
-										<div class="icon"></div>
-										<div class="text">
-											<strong>Creatively designed</strong>
-											Lorem ipsum dolor sit
-										</div>
-									</div>
-								</div>
-								<img src="img/project-6.png">
-							</div>
-						</div>
-					</td>
-					<td>
-						<div class="hover-block project">
-							<div class="hover-container">
-								<div class="hover-layout">
-								<div class="hover-layout-background"></div>
-								<div class="hover-content bg-c-nr">
-									<div class="icon"></div>
-									<div class="text">
-										<strong>Creatively designed</strong>
-										Lorem ipsum dolor sit
-									</div>
-								</div>
-								</div>
-								<img src="img/project-7.png">
-							</div>
-						</div>
-					</td>
-				</tr>
-			</table> -->
-		</div>
-		<div class="line-wrap quotes">
-			<div class="line">
-				<div class="quote-nav bg-c-nr prev-quote" id="prev-quote"></div>
-				<div class="quote">
-					<div class="quote-img">
-						<img src="img/quote-avatar.png">
-					</div>
-					<div class="quote-wrap">
-						<div class="quote-text">
-							“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, quis nostrud exercitation.”
-						</div>
-						<div class="quote-author">Joshua Earle</div>
 					</div>
 				</div>
-				<div class="quote-nav bg-c-nr next-quote" id="next-quote"></div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									Lorem ipsum dolor sit
+								</div>
+							</div>
+						</div>
+						<img src="img/project-2.png">
+					</div>
+				</div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr long">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									<span>Lorem ipsum dolor sit</span>
+								</div>
+							</div>
+						</div>
+						<img src="img/project-3.png">
+					</div>
+				</div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									<span>Lorem ipsum dolor sit</span>
+								</div>
+							</div>
+						</div>
+						<img src="img/project-4.png">
+					</div>
+				</div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									<span>Lorem ipsum dolor sit</span>
+								</div>
+							</div>
+						</div>
+						<img src="img/project-5.png">
+					</div>
+				</div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+							<div class="hover-layout-background"></div>
+							<div class="hover-content bg-c-nr">
+								<div class="icon"></div>
+								<div class="text">
+									<strong>Creatively designed</strong>
+									<span>Lorem ipsum dolor sit</span>
+								</div>
+							</div>
+						</div>
+						<img src="img/project-6.png">
+					</div>
+				</div>
+				<div class="hover-block hover-block-fixed project">
+					<div class="hover-container">
+						<div class="hover-layout">
+						<div class="hover-layout-background"></div>
+						<div class="hover-content bg-c-nr">
+							<div class="icon"></div>
+							<div class="text">
+								<strong>Creatively designed</strong>
+								<span>Lorem ipsum dolor sit</span>
+							</div>
+						</div>
+						</div>
+						<img src="img/project-7.png">
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="line-wrap feedbacks bg-c-nr">
+		<div class="line-wrap quotes" style="display: none;">
+			<div class="line is-main" id="feedback-quotes">
+				<div class="quote-nav bg-c-nr prev-quote is-nav-left" id="prev-quote"></div>
+
+				<div class="quotes-container is-wrapper">
+				<div class="is-container">
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/quote-avatar.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation.
+							</div>
+							<div class="quote-author">Joshua Earle</div>
+						</div>
+					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/quote-avatar.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Ut vitae commodo metus. Nulla tempus velit a euismod imperdiet. Maecenas vel vehicula lectus. Cras eget elementum quam. 
+								Nunc placerat lectus eget dui posuere molestie.
+							</div>
+							<div class="quote-author">Howard Gregory</div>
+						</div>
+					</div>
+
+					<div class="quote is-element">
+						<div class="quote-img">
+							<img src="img/quote-avatar.png">
+						</div>
+						<div class="quote-wrap">
+							<div class="quote-text">
+								Vivamus id aliquet arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed posuere nibh, quis feugiat erat. 
+								Quisque placerat tristique ultricies. Vestibulum quis lorem dui.
+							</div>
+							<div class="quote-author">Stanley Duran</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+				<div class="quote-nav bg-c-nr next-quote is-nav-right" id="next-quote"></div>
+			</div>
+		</div>
+		<div class="line-wrap feedbacks bg-c-nr" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">Happy clients</h3>
@@ -759,7 +654,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap">
+		<div class="line-wrap" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h3 class="kaushan">Our stories</h2>
@@ -820,14 +715,14 @@
 			40			32.5		22.5
 			42.105263	34.210536	23.684210
 		 -->
-		<div class="line-wrap bg-c-nr map">
+		<div class="line-wrap bg-c-nr map" style="display: none;">
 			<div class="line">
 				<div class="line-header">
 					<h2 class="montserrat">Open map</h2>
 				</div>
 			</div>
 		</div>
-		<div class="line-wrap footer">
+		<div class="line-wrap footer" style="display: block;">
 			<div class="line">
 				<div class="footer-content-wrap">
 					<div class="block info">
@@ -854,7 +749,7 @@
 							</div>
 						</div>
 						<form class="subscribe-form">
-							<input type="text" placeholder="Your Email...">
+							<input type="text" name="subemail" value="some.email@dot.com" placeholder="Your Email...">
 							<input type="submit" value="subscribe">
 						</form>
 					</div>
@@ -906,6 +801,20 @@
 				</div>
 				<div class="copyright">© 2019 MoGo free PSD template by <span class="site-author">[insert your name]</span></div>
 			</div>
+		</div>
+
+		<div id="subscribe-success" title="Subscribing our spam" style="display: none;">
+			Thanks to giving us your email, now we can send you spam. 
+			Please, check your account <strong id="subscriber-email"></strong> for initial spam message.
+		</div>
+		<div id="subscribe-error" title="Something went wrong" style="display: none;">
+			Text you entered does not seems like email, please try again.
+		</div>
+		<div id="killing-myself" title="Killing myself" style="display: none;">
+			Well, if you want it...
+		</div>
+		<div id="dead" title="What are you want?!" style="display: none;">
+			I'm dead, fuck off!
 		</div>
 	</div>
 </body>
