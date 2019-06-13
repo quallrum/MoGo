@@ -333,4 +333,90 @@
 		width: 18px;
 	}
 
+
+	.footer .footer-content-wrap{
+		margin-bottom: 3%;
+	}
+	.footer .block{
+		width: 100%;
+		margin-top: 7%;
+		margin-left: 0px;
+	}
+	.footer .block .title{
+		margin-bottom: 3%;
+	}
+	.footer .info .logo{
+		margin-bottom: 3%;
+
+		font-size: 3rem;
+	}
+	.footer .info .text{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.footer .info .followers strong{
+		font-size: 1.5rem;
+	}
+	.footer .info .separator{
+		margin: 1.5rem 0;
+	}
+	.footer .info .follow-us{
+		margin-bottom: 1rem;
+	}
+	.footer .info .follow-us .prompt{
+		line-height: 15px;
+	}
+	.footer .info .follow-us .links{
+		height: 15px;
+	}
+	.footer .info .follow-us .links a{
+		width: 15px;
+		height: 15px;
+	}
+
+
+
+	.subscribe-form input[type="text"]{
+		height: 30px;
+	}
+	.subscribe-form input[type="submit"]{
+		height: 30px;
+		line-height: 30px;
+	}
+
+
+
+	.footer .block.blogs{
+		width: 100%;
+	}
+	.footer .blog{
+		margin-bottom: 3%;
+	}
+	.footer .blog .img{
+		float: left;
+		width: 30%;
+		height: auto;
+		margin-right: 3%;
+	}
+	.footer .blog .img img{
+		width: 100%;
+		max-height: auto;
+	}
+	.footer .blog .title-wrap{
+		float: left;
+		width: 67%;
+		margin-top: 3%;
+	}
+
+
+
+	.footer .block.instagram{
+		width: 100%;
+	}
+
+
+
+	.footer .copyright{
+		
+	}
 }
