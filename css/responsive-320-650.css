@@ -214,7 +214,8 @@
 		float: left;
 		width: calc(90% - 100px);
 		height: auto;
-		margin: 5%;
+		margin: 40px;
+		/*margin: 5%;*/
 	}
 	.quote .quote-img{
 		float: left;

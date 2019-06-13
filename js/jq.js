@@ -28,25 +28,20 @@ function InfiniteSlider(selector){
 	this.moveInProcess = false;
 
 	var e = $(this.elements[0]), w, h;
-	w = parseFloat(e.css('width'));
-	h = parseFloat(e.css('height'));
 
-	this.step = w + parseFloat(e.css('margin-left')) + parseFloat(e.css('margin-right'));
-
-	this.elements.css('width', e.css('width'));
+	this.step = parseFloat(this.container.css('width'));
+	this.elements.css('width', this.step - parseFloat(e.css('margin-left')) - parseFloat(e.css('margin-right')));
 	this.container.css('width', this.elements.length * this.step + 'px');
 
-	h += parseFloat(e.css('margin-top')) + parseFloat(e.css('margin-bottom'));
-	this.nav.left.css('height', h + 'px')
-	this.nav.right.css('height', h + 'px')
+	h = parseFloat(e.css('height')) + parseFloat(e.css('margin-top')) + parseFloat(e.css('margin-bottom'));
 
-	// this.elements.css('width', this.wrapper.css('width'));
+	this.container.css('height', h + 'px');
+	this.nav.left.css('height', h + 'px');
+	this.nav.right.css('height', h + 'px');
 
 	this.move = (function(dir){
 		if(this.moveInProcess) return;
 		this.moveInProcess = true;
-
-		// console.log(this.current);
 
 		var a, shift = parseFloat(this.container.css('left'));
 		if(dir == 'left'){
@@ -87,8 +82,6 @@ function InfiniteSlider(selector){
 		}
 
 		console.log(this.current);
-		// sleep(1000);
-		// throw 'Stop';
 
 		this.container.animate(a, 1000, (function(){
 			this.moveInProcess = false;
@@ -100,10 +93,8 @@ function InfiniteSlider(selector){
 		this.elements = this.container.find('.is-element');
 	}).bind(this);
 
-	// this.nav.right.on('click', this.moveRight.call(this));
 	this.nav.left.on('click', function(){ this.move('right'); }.bind(this));
 	this.nav.right.on('click', function(){ this.move('left'); }.bind(this));
-
 }
 
 slider = new InfiniteSlider('.main');
